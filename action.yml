@@ -1,0 +1,13 @@
+name: 'My Custom Action'
+description: 'This is my custom action'
+branding:
+  icon: file-text
+  color: green
+inputs:
+  name:
+    description: 'The name to greet'
+    required: true
+    default: 'World'
+runs:
+  using: 'node12'
+  main: 'index.js'
