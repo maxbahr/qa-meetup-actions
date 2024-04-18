@@ -1,4 +1,4 @@
-# My Custom Action  
+# My Custom Action
 
 ![My Custom Action](icon.png)
 
