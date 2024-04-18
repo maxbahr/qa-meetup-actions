@@ -1,0 +1,26 @@
+name: My Workflow
+
+on: [push]
+
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      id: checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      id: setup-node
+      uses: actions/setup-node@v4
+
+    - name: Install Dependencies
+      id: npm-ci
+      run: npm ci
+      
+    - name: Run My Custom Action
+      uses: ./
+      with:
+        name: 'John'
+          
